@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advocate Ajeet Kumar | Civil & Criminal Lawyer</title>
+    <meta name="description" content="Advocate Ajeet Kumar - Civil & Criminal Lawyer practicing in Jehanabad, Arwal, Patna & Patna High Court. Executive Member, Bar Council Jehanabad.">
+    <meta name="keywords" content="Advocate Ajeet Kumar, Civil Lawyer Jehanabad, Criminal Lawyer Patna, High Court Advocate Patna, Legal Services Bihar">
+    <meta name="author" content="Advocate Ajeet Kumar">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            scroll-behavior: smooth;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        /* Hero Section */
+        header {
+            background: url('courtroom-placeholder.jpg') no-repeat center center/cover;
+            color: #fff;
+            padding: 120px 20px;
+            text-align: center;
+            position: relative;
+        }
+        header::after {
+            content: "";
+            position: absolute;
+            top:0; left:0; right:0; bottom:0;
+            background: rgba(0,0,0,0.6);
+        }
+        header h1, header p {
+            position: relative;
+            z-index: 1;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.3em;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: #162447;
+            display: flex;
+            justify-content: center;
+            padding: 12px 0;
+            z-index: 100;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #f0a500;
+        }
+        section {
+            padding: 70px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+        section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.2em;
+            color: #1a1a2e;
+        }
+        /* About Section */
+        .about {
+            background: #fff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .about img {
+            float: right;
+            margin-left: 20px;
+            width: 220px;
+            height: auto;
+            border-radius: 10px;
+        }
+        /* Counters */
+        .counters {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .counter {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #f0a500;
+        }
+        .counter-label {
+            font-size: 1em;
+            color: #444;
+        }
+        /* Services Section */
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .service-card {
+            background: #fff;
+            flex: 1 1 250px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .service-card img {
+            width: 60px;
+            margin-bottom: 15px;
+        }
+        /* Testimonials */
+        .testimonials li {
+            background: #fff;
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        /* Contact Section */
+        .contact a {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 25px;
+            background-color: #1a1a2e;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .contact a:hover {
+            background-color: #f0a500;
+        }
+        /* Appointment Form */
+        form {
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            max-width: 600px;
+            margin: auto;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+        form button {
+            background: #1a1a2e;
+            color: #fff;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        form button:hover {
+            background: #f0a500;
+        }
+        /* Sticky Contact Buttons */
+        .sticky-buttons {
+            position: fixed;
+            right: 20px;
+            bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 200;
+        }
+        .sticky-buttons a {
+            background: #25d366;
+            color: #fff;
+            padding: 12px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+        .sticky-buttons a.call {
+            background: #1a1a2e;
+        }
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #162447;
+            color: #fff;
+        }
+        @media(max-width: 700px) {
+            .counters { flex-direction: column; gap: 20px; }
+            .about img { float: none; margin: 20px auto; display: block; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header>
+        <h1>Advocate Ajeet Kumar</h1>
+        <p>Civil & Criminal Lawyer | Practicing since 2004 | Executive Member, Bar Council Jehanabad</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <img src="D:\OneDrive\Desktop\Pushkar\IMG_20220610_100956.jpg" alt="Advocate Ajeet Kumar">
+        <p>Advocate Ajeet Kumar has been practicing law since 2004, specializing in both civil and criminal cases. With extensive experience representing clients in lower courts across Jehanabad, Arwal, and Patna, as well as in the High Court of Patna, he is known for his dedication, professionalism, and commitment to justice.</p>
+        <p>Currently serving as an <strong>Executive Member of the Bar Council, Jehanabad</strong>, Advocate Ajeet Kumar combines deep legal expertise with a client-focused approach, ensuring that every case receives meticulous attention and strategic guidance.</p>
+        <p>Whether navigating complex legal matters or providing practical legal advice, Advocate Ajeet Kumar is committed to protecting your rights and achieving the best possible outcomes.</p>
+        
+        <!-- Counters -->
+        <div class="counters">
+            <div>
+                <div class="counter" data-target="19">0</div>
+                <div class="counter-label">Years of Experience</div>
+            </div>
+            <div>
+                <div class="counter" data-target="512">0</div>
+                <div class="counter-label">Cases Handled</div>
+            </div>
+            <div>
+                <div class="counter" data-target="3">0</div>
+                <div class="counter-label">Courts Practiced</div>
+            </div>
+        </div>
+        
+        <p style="text-align:center; margin-top:20px;">
+            <a href="Ajeet-Kumar-Profile.pdf" download class="contact-btn">📄 Download Profile</a>
+        </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Services</h2>
+        <div class="services">
+            <div class="service-card">
+                <img src="D:\OneDrive\Desktop\Pushkar\civil.jpg" alt="Civil Law">
+                <h3>Civil Law</h3>
+                <p>Representation in civil cases across lower courts (Jehanabad, Arwal, Patna) and High Court, Patna.</p>
+            </div>
+            <div class="service-card">
+                <img src="D:\OneDrive\Desktop\Pushkar\criminal.jpg" alt="Criminal Law">
+                <h3>Criminal Law</h3>
+                <p>Defending clients in criminal matters with strong legal strategies and dedication to justice.</p>
+            </div>
+            <div class="service-card">
+                <img src="D:\OneDrive\Desktop\Pushkar\consult.jpg" alt="Consultation">
+                <h3>Legal Consultation</h3>
+                <p>Offering professional advice, case strategies, and documentation assistance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <h2>Client Testimonials</h2>
+        <ul>
+            <li>"Advocate Ajeet Kumar handled my civil case with utmost professionalism and ensured a smooth resolution. Highly recommended!" – <b>Pushkar Singh (CEO) Star Industries, krukshetra</b></li>
+            <li>"His expertise and dedication in legal matters are exceptional. Truly a trustworthy advocate." – <b>Akanksha Kumari, Dental Surgean</b></li>
+            <li>"I was impressed by his clear guidance and commitment to my case. Advocate Ajeet Kumar is very reliable." – <b>Anushka Sharma (DM), Dumpa, Jharkhand</b></li>
+        </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p style="text-align:center;">Reach me easily via gmail or WhatsApp, or book an appointment below:</p>
+        <p style="text-align:center;">
+            <a href="mailto:ajeetpak@gmail.com">📧 Gmail Me</a>
+            <a href="https://wa.me/+91 9955599588" target="_blank">💬 WhatsApp</a>
+        </p>
+
+        <!-- Appointment Form -->
+        <form>
+            <h3 style="text-align:center;">Book an Appointment</h3>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Phone Number" required>
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Google Maps -->
+        <div style="margin-top:40px; text-align:center;">
+            <h3>Office Location</h3>
+            <iframe src="https://www.google.com/maps?q=Court+Area,+Ambedkar+Chowk,+Jehanabad&output=embed" width="100%" height="350" style="border:0;" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Sticky Contact Buttons -->
+    <div class="sticky-buttons">
+        <a href="https://wa.me/+91 9955599588" target="_blank">💬</a>
+        <a href="tel:+91 9955599588" class="call">📞</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Advocate Ajeet Kumar. All Rights Reserved.</p>
+        <p>Office: Court Area, Ambedkar Chowk, Jehanabad</p>
+    </footer>
+
+    <!-- JS for Counters -->
+    <script>
+        const counters = document.querySelectorAll('.counter');
+        counters.forEach(counter => {
+            counter.innerText = '0';
+            const updateCounter = () => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const increment = target / 100;
+                if(count < target){
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(updateCounter, 40);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+            updateCounter();
+        });
+    </script>
+
+</body>
+</html>
